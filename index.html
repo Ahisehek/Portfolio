@@ -12,14 +12,22 @@
 
 
     <style>
-        body{
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        .mainnn{
+
+        body,
+        html {
+            height: 100%;
+            width: 100%;
             background-color: rgb(44, 29, 59);
-          
-           box-sizing: border-box;
+        }
+
+        .mainnn {
+            width: 100%;
+
 
         }
 
@@ -53,7 +61,7 @@
         }
 
         .right {
-            margin: 0px 0px;
+            margin: 0px 60px;
             width: 50%;
 
 
@@ -85,25 +93,34 @@
         section {
             display: flex;
             margin: 30px 60px;
+            border: 2px solid red;
 
 
         }
 
         .leftsec {
+            border: 2px solid greenyellow;
 
 
-            width: 50%;
+            width: 50vw;
+            height: 75vh;
+
 
             text-align: center;
             font-family: 'Ubuntu', sans-serif;
             font-size: 23px;
+            overflow: hidden;
 
         }
 
         .rightsec {
+            border: 2px solid wheat;
+            object-fit: cover;
+            overflow: hidden;
+            padding-right: 30px;
 
 
-            width: 50%;
+            width: 50vw;
 
         }
 
@@ -128,10 +145,12 @@
 
 
         }
-        .icon a{
+
+        .icon a {
             color: blueviolet;
         }
-        .midsec .icon:hover{
+
+        .midsec .icon:hover {
             box-shadow: 2px -1px 2px white;
         }
 
@@ -147,7 +166,8 @@
         .dark {
             color: blueviolet;
         }
-        .yellow{
+
+        .yellow {
             color: #F5D012;
         }
 
@@ -174,11 +194,12 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
             box-shadow: 2px 3px 5px black;
+            margin: auto;
         }
 
         #element {
 
-            color:#FF7AD2;
+            color: #FF7AD2;
             font-family: 'Ubuntu', sans-serif;
             font-size: 18px;
 
@@ -221,18 +242,6 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        .footer {
-            background-color: rgb(44, 29, 59);
-            color: aliceblue;
-            text-align: center;
-            padding: 20px;
-            position: sticky;
-
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-        }
 
         .nav {
 
@@ -244,16 +253,19 @@
         }
 
         @media only screen and (min-device-width: 0px) and (max-device-width: 415px) {
-            
+
 
             section {
-                flex-wrap: wrap;
-                
+                flex-wrap: wrap-reverse;
+                width: 100%;
+                margin: auto;
+
 
 
 
             }
-            .nav{
+
+            .nav {
                 width: 100%;
             }
 
@@ -274,9 +286,15 @@
 
 
                 width: 100%;
-                margin: 23px -110px;
+                margin: auto;
 
 
+
+            }
+
+            .rightsec {
+                width: 100%;
+                margin: auto;
             }
 
             .btn {
@@ -287,17 +305,41 @@
 
             .midsec {
 
-                margin: 23px 47px;
+                margin: 23px 35px;
                 gap: 0px 23px;
 
             }
-            .footer{
-                margin: 0px 40px;
-                padding: 0px 0px;
+            .burger{
+                display: block;
+                color: white;
+                float: right;
+            }
+
+            .footer {
+                width: 100vw;
             }
 
 
 
+        }
+
+        .footer {
+            background-color: rgb(44, 29, 59);
+            color: aliceblue;
+            align-items: center;
+
+
+            padding: 20px;
+            position: sticky;
+
+
+            bottom: 0;
+            left: 0;
+
+            z-index: 999;
+        }
+        .burger{
+            display: none;
         }
     </style>
 </head>
@@ -313,26 +355,25 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contects</a></li>
                     <li><a href="#">Help</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                      </a></li>
+
                 </ul>
             </div>
+            <div class="burger"><ion-icon name="list-outline"></ion-icon></div>
         </div>
-    
+
         <section>
             <div class="leftsec">
                 <div class="text"> Hi My Name is <span class="dark">Abhishek</span>
                     <div class="tstyle">AND i am a <span class="yellow">frontend</span> developer</div>
                     <div class="tstyle">I know languages and Frameworks <br> <span id="element"></span></div>
                 </div>
-    
-    
-    
-    
+
+
+
+
             </div>
-    
-    
+
+
             <div class="rightsec">
                 <div class="img"><img src="development-4536630_1280.png" alt="sorry"></div>
             </div>
@@ -340,22 +381,28 @@
         <div class="btn">
             <button><a href="ABHISEC.pdf" download>Download Resume</a></button>
         </div>
-    
+
         <hr>
         <div class="midsec">
-            <div class="icon"><a target="_blank" href="https://www.instagram.com/its_me_asbhishek_kushwaha/"><ion-icon name="logo-instagram"></ion-icon></a></div>
-            <div class="icon"><a target="_blank" href="https://www.facebook.com/profile.php?id=61557438093179"><ion-icon name="logo-facebook"></ion-icon></a></div>
-            <div class="icon"><a target="_blank" href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a></div>
+            <div class="icon"><a target="_blank" href="https://www.instagram.com/its_me_asbhishek_kushwaha/"><ion-icon
+                        name="logo-instagram"></ion-icon></a></div>
+            <div class="icon"><a target="_blank" href="https://www.facebook.com/profile.php?id=61557438093179"><ion-icon
+                        name="logo-facebook"></ion-icon></a></div>
+            <div class="icon"><a target="_blank" href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
             <div class="icon"><a target="_blank" href=""><ion-icon name="logo-linkedin"></ion-icon></a></div>
-            <div class="icon"><a target="_blank" href="https://twitter.com/AbhishekKu46874"><ion-icon name="logo-twitter"></ion-icon></a></div>
-    
-    
-    
+            <div class="icon"><a target="_blank" href="https://twitter.com/AbhishekKu46874"><ion-icon
+                        name="logo-twitter"></ion-icon></a></div>
+
+
+
         </div>
+
         <footer class="footer">
             <div>&copy; 2024 Abhishek's Portfolio. All rights reserved.</div>
         </footer>
-       
+
+
     </div>
 
 
