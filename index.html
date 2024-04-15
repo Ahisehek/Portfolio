@@ -12,13 +12,20 @@
 
 
     <style>
-        body {
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .mainnn{
             background-color: rgb(44, 29, 59);
+          
+           box-sizing: border-box;
 
         }
 
         .nav {
             background-color: rgb(44, 29, 59);
+            width: 100%;
             display: flex;
             border-radius: 5px;
             border-left: 2px solid blueviolet;
@@ -120,6 +127,9 @@
 
 
 
+        }
+        .icon a{
+            color: blueviolet;
         }
         .midsec .icon:hover{
             box-shadow: 2px -1px 2px white;
@@ -230,13 +240,18 @@
 
         }
 
-        @media only screen and (min-device-width: 0px) and (max-device-width: 412px) {
+        @media only screen and (min-device-width: 0px) and (max-device-width: 415px) {
+            
 
             section {
                 flex-direction: column-reverse;
+                
+
+
+
+            }
+            .nav{
                 width: 100%;
-
-
             }
 
             .right {
@@ -273,6 +288,10 @@
                 gap: 0px 23px;
 
             }
+            .footer{
+                margin: 0px 40px;
+                padding: 0px 0px;
+            }
 
 
 
@@ -281,54 +300,60 @@
 </head>
 
 <body>
-    <div class="nav">
-        <div class="left">Abhishek's Portfolio</div>
-        <div class="right">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contects</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <section>
-        <div class="leftsec">
-            <div class="text"> Hi My Name is <span class="dark">Abhishek</span>
-                <div class="tstyle">AND i am a passionate developer</div>
-                <div class="tstyle">I know languages and Frameworks <br> <span id="element"></span></div>
+    <div class="mainnn">
+        <div class="nav">
+            <div class="left">Abhishek's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contects</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a></li>
+                </ul>
             </div>
-
-
-
-
         </div>
-
-
-        <div class="rightsec">
-            <div class="img"><img src="development-4536630_1280.png" alt="sorry"></div>
+    
+        <section>
+            <div class="leftsec">
+                <div class="text"> Hi My Name is <span class="dark">Abhishek</span>
+                    <div class="tstyle">AND i am a passionate developer</div>
+                    <div class="tstyle">I know languages and Frameworks <br> <span id="element"></span></div>
+                </div>
+    
+    
+    
+    
+            </div>
+    
+    
+            <div class="rightsec">
+                <div class="img"><img src="development-4536630_1280.png" alt="sorry"></div>
+            </div>
+        </section>
+        <div class="btn">
+            <button><a href="pic.jpg" download>Download Resume</a></button>
         </div>
-    </section>
-    <div class="btn">
-        <button><a href="pic.jpg" download>Download Resume</a></button>
+    
+        <hr>
+        <div class="midsec">
+            <div class="icon"><a target="_blank" href="https://www.instagram.com/its_me_asbhishek_kushwaha/"><ion-icon name="logo-instagram"></ion-icon></a></div>
+            <div class="icon"><a target="_blank" href="https://www.facebook.com/profile.php?id=61557438093179"><ion-icon name="logo-facebook"></ion-icon></a></div>
+            <div class="icon"><a target="_blank" href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a></div>
+            <div class="icon"><a target="_blank" href=""><ion-icon name="logo-linkedin"></ion-icon></a></div>
+            <div class="icon"><a target="_blank" href="https://twitter.com/AbhishekKu46874"><ion-icon name="logo-twitter"></ion-icon></a></div>
+    
+    
+    
+        </div>
+        <footer class="footer">
+            <div>&copy; 2024 Abhishek's Portfolio. All rights reserved.</div>
+        </footer>
+       
     </div>
-
-    <hr>
-    <div class="midsec">
-        <div class="icon"><ion-icon name="logo-instagram"></ion-icon></div>
-        <div class="icon"><ion-icon name="logo-facebook"></ion-icon></div>
-        <div class="icon"><ion-icon name="logo-github"></ion-icon></div>
-        <div class="icon"><ion-icon name="logo-linkedin"></ion-icon></div>
-        <div class="icon"><ion-icon name="logo-twitter"></ion-icon></div>
-
-
-
-    </div>
-    <footer class="footer">
-        <div>&copy; 2024 Abhishek's Portfolio. All rights reserved.</div>
-    </footer>
 
 
 
