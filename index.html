@@ -92,14 +92,14 @@
 
         section {
             display: flex;
-            margin: 30px 60px;
-            border: 2px solid red;
-
+            margin: 70px 80px;
+            height: 300px;
+           
 
         }
 
         .leftsec {
-            border: 2px solid greenyellow;
+           
 
 
             width: 50vw;
@@ -114,7 +114,7 @@
         }
 
         .rightsec {
-            border: 2px solid wheat;
+            
             object-fit: cover;
             overflow: hidden;
             padding-right: 30px;
@@ -132,7 +132,7 @@
 
         .midsec {
 
-            margin: 23px 300px;
+            margin: 23px 450px;
             width: 40px;
             display: flex;
 
@@ -148,6 +148,7 @@
 
         .icon a {
             color: blueviolet;
+        
         }
 
         .midsec .icon:hover {
@@ -161,6 +162,7 @@
             border-top-left-radius: 10px;
             border-bottom-right-radius: 10px;
             box-shadow: -3px 2px 5px black;
+            
         }
 
         .dark {
@@ -252,7 +254,7 @@
 
         }
 
-        @media only screen and (min-device-width: 0px) and (max-device-width: 415px) {
+        @media only screen and (min-device-width: 0px) and (max-device-width: 430px) {
 
 
             section {
@@ -286,15 +288,26 @@
 
 
                 width: 100%;
+                height: 360px;
+                
+                justify-content: center;
+                
+
+
+
+            }
+            .leftsec .text{
+                border-left: none;
+                width: 100%;
                 margin: auto;
-
-
-
+                padding: 10px;
             }
 
             .rightsec {
                 width: 100%;
                 margin: auto;
+                height: 270px;
+            
             }
 
             .btn {
@@ -305,7 +318,7 @@
 
             .midsec {
 
-                margin: 23px 35px;
+                margin: 23px 65px;
                 gap: 0px 23px;
 
             }
@@ -317,6 +330,7 @@
 
             .footer {
                 width: 100vw;
+                margin: 27px;
             }
 
 
@@ -329,14 +343,21 @@
             align-items: center;
 
 
-            padding: 20px;
+            padding: 40px;
             position: sticky;
+           
 
 
             bottom: 0;
             left: 0;
 
             z-index: 999;
+        }
+         .foot{
+            
+            text-align: center;
+            
+            
         }
         .burger{
             display: none;
@@ -399,7 +420,7 @@
         </div>
 
         <footer class="footer">
-            <div>&copy; 2024 Abhishek's Portfolio. All rights reserved.</div>
+            <div class="foot"> &copy; 2024 Abhishek's Portfolio. All rights reserved.</div>
         </footer>
 
 
