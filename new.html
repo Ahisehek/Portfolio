@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek's Portfoli0</title>
+    <title>Abhishek's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-
-
     <style>
         * {
             margin: 0;
@@ -22,50 +19,35 @@
         html {
             height: 100%;
             width: 100%;
-            background-color: white;
+            background-color: rgb(44, 29, 59);
         }
 
         .mainnn {
             width: 100%;
-
-
         }
 
         .nav {
-            background-color: white;
+            background-color: rgb(44, 29, 59);
             width: 100%;
             display: flex;
             border-radius: 5px;
             border-left: 2px solid blueviolet;
-            border-left: 2px solid blueviolet;
             border-bottom: 2px solid blueviolet;
             height: 53px;
             box-shadow: 2px 3px 5px black;
-
-
-
         }
 
         .nav .left {
             width: 30%;
-            color: purple;
+            color: aliceblue;
             margin: 16px 60px;
             font-family: 'Ubuntu', sans-serif;
             text-align: center;
-
-
-
-
-
-
         }
 
         .right {
             margin: 0px 60px;
             width: 50%;
-
-
-
         }
 
         .nav .right ul {
@@ -75,53 +57,35 @@
 
         .nav .right ul li {
             list-style: none;
-
             margin: 0 16px;
-
-
         }
 
         .right ul li a {
             text-decoration: none;
-            color: purple;
+            color: aliceblue;
             font-family: 'Ubuntu', sans-serif;
-
-
-
         }
 
         section {
             display: flex;
             margin: 70px 80px;
-            height: 350px;
-           
-
+            height: 300px;
         }
 
         .leftsec {
-           
-
-
-            width: 50vw;
+            width: 100%;
             height: 75vh;
-
-
             text-align: center;
             font-family: 'Ubuntu', sans-serif;
             font-size: 23px;
             overflow: hidden;
-
         }
 
         .rightsec {
-            
             object-fit: cover;
             overflow: hidden;
             padding-right: 30px;
-
-
-            width: 50vw;
-
+            width: 100%;
         }
 
         .img img {
@@ -131,28 +95,21 @@
         }
 
         .midsec {
-
-            margin: 23px 450px;
-            width: 40px;
+            margin: 23px auto;
+            width: fit-content;
             display: flex;
-
             font-size: 40px;
-            gap: 0px 90px;
+            gap: 0px 30px;
             color: blueviolet;
             cursor: pointer;
-
-
-
-
         }
 
         .icon a {
             color: blueviolet;
-        
         }
 
         .midsec .icon:hover {
-            box-shadow: 2px -1px 2px violet;
+            box-shadow: 2px -1px 2px white;
         }
 
         .midsec .icon {
@@ -162,7 +119,6 @@
             border-top-left-radius: 10px;
             border-bottom-right-radius: 10px;
             box-shadow: -3px 2px 5px black;
-            
         }
 
         .dark {
@@ -179,15 +135,10 @@
             border-bottom-left-radius: 10px;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
-            color: violet;
-
-
+            color: aliceblue;
             height: 350px;
             width: 65%;
-            margin: 0px 110px;
-
-
-
+            margin: 0px auto;
         }
 
         hr {
@@ -200,39 +151,31 @@
         }
 
         #element {
-
             color: #FF7AD2;
             font-family: 'Ubuntu', sans-serif;
             font-size: 18px;
-
-
         }
 
         .btn {
-            margin: 23px 0px;
+            margin: 23px auto;
             text-align: center;
         }
 
         .btn button a {
             text-decoration: none;
-            color: violet;
-
+            color: aliceblue;
         }
 
         .btn button {
             border: none;
             cursor: pointer;
             background: none;
-            color: purple;
+            color: aliceblue;
             border-top: 2px solid violet;
             border-left: 2px solid violet;
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
-
-
-
-
         }
 
         .btn button:hover {
@@ -244,79 +187,81 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-
         .nav {
-
             position: sticky;
             top: 0;
-
-
-
-        }
-
-        @media only screen and (min-device-width: 0px) and (max-device-width: 430px) {
-            .mainnn{
-                height: 100vh;
-                width: 100vw;
-               
-
-            }
-            .nav{
-                width: 100%;
-            }
-            .right ul li{
-                display: none;
-            }
-            section{
-               
-                display: inline;
-                height: 70vh;
-            }
-            .leftsec{
-                width: 100%;
-                margin: auto;
-            }
-            .rightsec{
-                width: 100%;
-                margin-left: 60px;
-               
-            }
-           .midsec{
-            margin: 10px 10px;
-            gap:0px;
-           }
-
-           hr{
-            width: 80vw;
-           }
-
         }
 
         .footer {
             background-color: rgb(44, 29, 59);
-            
-            color: violet;
+            color: aliceblue;
             align-items: center;
-
-
-            padding: 20px;
+            padding: 40px;
             position: sticky;
-           
-
-
             bottom: 0;
             left: 0;
-
             z-index: 999;
         }
-         .foot{
-            
+
+        .foot {
             text-align: center;
-            
-            
         }
-        .burger{
+
+        .burger {
             display: none;
+        }
+
+        /* Media Queries */
+        @media (max-width: 430px) {
+            .nav .left {
+                margin: 16px 10px;
+                font-size: 14px;
+            }
+
+            .right {
+                margin: 0px 10px;
+            }
+
+            .nav .right ul {
+                margin: 16px 10px;
+            }
+
+            .midsec {
+                margin: 23px auto;
+                font-size: 30px;
+            }
+
+            .btn {
+                margin: 23px auto;
+            }
+
+            section {
+                flex-direction: column;
+                margin: 50px 20px;
+            }
+
+            .leftsec {
+                height: auto;
+                width: 100%;
+            }
+
+            .rightsec {
+                width: 100%;
+            }
+
+            .img img {
+                width: 100%;
+                height: auto;
+            }
+
+            .leftsec .text {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .midsec {
+                margin: 23px auto;
+            }
         }
     </style>
 </head>
@@ -332,7 +277,6 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contects</a></li>
                     <li><a href="#">Help</a></li>
-
                 </ul>
             </div>
             <div class="burger"><ion-icon name="list-outline"></ion-icon></div>
@@ -344,13 +288,7 @@
                     <div class="tstyle">AND i am a <span class="yellow">frontend</span> developer</div>
                     <div class="tstyle">I know languages and Frameworks <br> <span id="element"></span></div>
                 </div>
-
-
-
-
             </div>
-
-
             <div class="rightsec">
                 <div class="img"><img src="development-4536630_1280.png" alt="sorry"></div>
             </div>
@@ -358,7 +296,6 @@
         <div class="btn">
             <button><a href="ABHISEC.pdf" download>Download Resume</a></button>
         </div>
-
         <hr>
         <div class="midsec">
             <div class="icon"><a target="_blank" href="https://www.instagram.com/its_me_asbhishek_kushwaha/"><ion-icon
@@ -370,20 +307,11 @@
             <div class="icon"><a target="_blank" href=""><ion-icon name="logo-linkedin"></ion-icon></a></div>
             <div class="icon"><a target="_blank" href="https://twitter.com/AbhishekKu46874"><ion-icon
                         name="logo-twitter"></ion-icon></a></div>
-
-
-
         </div>
-
         <footer class="footer">
             <div class="foot"> &copy; 2024 Abhishek's Portfolio. All rights reserved.</div>
         </footer>
-
-
     </div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -392,40 +320,12 @@
             backDelay: 5000,
             loop: true
         });
-
-        let tl=gsap.timeline();
-
-        tl.from(".nav",{
-            y:-30,
-            duration:1
-        })
-
-        tl.from(".left",{
-            y:-30,
-
-        })
-
-        tl.from(".right ,a",{
-            y:-30,
-            
-        })
-
-        tl.from(".leftsec",{
-            x:-1000,
-            duration:1
-        })
-
-        tl.from(".rightsec",{
-            x:1000,
-            duration:1
-        })
     </script>
 </body>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script>
-
-
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
 </script>
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+</script>
+<script>
+</script>
 </html>
