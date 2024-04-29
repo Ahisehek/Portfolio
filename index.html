@@ -80,6 +80,12 @@
 
 
         }
+        .image{
+
+            height: 80%;
+            width: 10%;
+            
+        }
 
         .right ul li a {
             text-decoration: none;
@@ -103,24 +109,29 @@
 
 
             width: 50vw;
-            height: 75vh;
+            height: 50vh;
 
 
             text-align: center;
             font-family: 'Ubuntu', sans-serif;
             font-size: 23px;
             overflow: hidden;
+            
+            
+        
 
         }
-
+      
         .rightsec {
             
             object-fit: cover;
             overflow: hidden;
             padding-right: 30px;
+            
 
 
             width: 50vw;
+            height: 50vh;
 
         }
 
@@ -129,18 +140,22 @@
             width: 70%;
             margin: 0px 30px;
         }
+        
 
         .midsec {
 
-            margin: 23px 450px;
-            width: 40px;
+            
+            width: 100vw;
             display: flex;
+            justify-content: center;
 
             font-size: 40px;
             gap: 0px 90px;
             color: blueviolet;
             cursor: pointer;
-
+            
+            
+    
 
 
 
@@ -261,32 +276,79 @@
             .mainnn{
                 height: 100vh;
                 width: 100vw;
+                overflow-x: hidden;
                
 
             }
             .nav{
                 width: 100%;
+                justify-content: space-around;
+                
+                z-index: 999;
+                
+
+            }
+            .image{
+                margin:3px 80px ;
+                padding:0px 20px;
+                border-radius: 50px;
+                background-image: url("ABC.jpg");
+                background-size: cover;
+                object-fit: cover;
+                
+                
             }
             .right ul li{
                 display: none;
             }
             section{
                
-                display: inline;
-                height: 70vh;
+                
+
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                height: 100vh;
+                width: 90%;
+                margin: 10px 20px;
+                
+                
+                
             }
             .leftsec{
-                width: 100%;
-                margin: auto;
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+                height: 55%;
+                
+                
+
+                
+               
+
             }
             .rightsec{
+                
+                
                 width: 100%;
-                margin-left: 60px;
+                height: 45%;
+                
+                padding-left: 50px;
+                
+            
                
             }
+          
+            .leftsec .text{
+                width: 100%;
+                margin: 0px 20px;
+                border: none;
+            }
+
            .midsec{
-            margin: 10px 10px;
-            gap:0px;
+            
+            
+            gap: 15px;
            }
 
            hr{
@@ -328,6 +390,11 @@
     <div class="mainnn">
         <div class="nav">
             <div class="left">Abhishek's Portfolio</div>
+            <div class="image">
+                
+
+
+            </div>
             <div class="right">
                 <ul>
                     <li><a href="#">About</a></li>
@@ -337,7 +404,9 @@
                     <li><a href="#">Help</a></li>
 
                 </ul>
+                
             </div>
+           
             <div class="burger"><ion-icon name="list-outline"></ion-icon></div>
         </div>
 
@@ -421,6 +490,12 @@
         tl.from(".rightsec",{
             x:1000,
             duration:1
+        })
+
+        tl.from(".icon",{
+            y:-1000,
+            duration:5
+
         })
     </script>
 </body>
